@@ -1,0 +1,5 @@
+{
+  "name": "Base Decentralized Marketplace",
+  "description": "A proof-of-concept decentralized digital marketplace built on React, simulating interactions with the Base blockchain and Coinbase ecosystem tools.",
+  "requestFramePermissions": []
+}

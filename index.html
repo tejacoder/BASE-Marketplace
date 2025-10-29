@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Base Decentralized Marketplace</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'base-blue': '#0052FF',
+            'base-dark': '#0F172A',
+            'base-light': '#F8FAFC',
+            'base-gray': '#475569',
+            'base-accent': '#38BDF8',
+          },
+          animation: {
+            'slide-in': 'slide-in 0.3s ease-out forwards',
+            'slide-out': 'slide-out 0.3s ease-out forwards',
+            'fade-in': 'fade-in 0.3s ease-out forwards',
+          },
+          keyframes: {
+            'slide-in': {
+              '0%': { transform: 'translateX(100%)' },
+              '100%': { transform: 'translateX(0)' },
+            },
+            'slide-out': {
+              '0%': { transform: 'translateX(0)' },
+              '100%': { transform: 'translateX(100%)' },
+            },
+            'fade-in': {
+                '0%': { opacity: 0 },
+                '100%': { opacity: 1 },
+            },
+          }
+        }
+      }
+    }
+  </script>
+<script type="importmap">
+{
+  "imports": {
+    "react": "https://aistudiocdn.com/react@19.2.0",
+    "react/": "https://aistudiocdn.com/react@19.2.0/",
+    "react-dom": "https://aistudiocdn.com/react-dom@19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@19.2.0/",
+    "ethers": "https://esm.sh/ethers@6.13.1"
+  }
+}
+</script>
+</head>
+<body class="bg-base-dark text-base-light">
+  <div id="root"></div>
+</body>
+</html>
